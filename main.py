@@ -1,6 +1,6 @@
 """
 Hypersonic Flight Corridor Mapper
-===================================
+
 Main entry point — runs the full pipeline:
 1. Validates atmosphere model against standard tables
 2. Runs aerothermal checks
