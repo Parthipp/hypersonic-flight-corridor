@@ -151,5 +151,5 @@ plt.tight_layout(rect=[0, 0, 1, 0.95])
 plt.savefig('hypersonic_corridor_comparison.png', dpi=200, bbox_inches='tight')
 plt.show()
 
-print("\n✅ Plot saved as hypersonic_corridor_comparison.png")
+print("\n Plot saved as hypersonic_corridor_comparison.png")
 
