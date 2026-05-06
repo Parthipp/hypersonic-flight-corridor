@@ -7,8 +7,8 @@ Main entry point — runs the full pipeline:
 3. Generates multi-vehicle corridor comparison plot
 """
 
-from atmosphere import get_temperature, get_pressure, get_density
-from aerothermal import get_heat_flux, get_dynamic_pressure
+from atmosphere import get_temp, get_pressure, get_density
+from aerothermal import get_heatflux, get_dynamic_pressure
 
 # QUICK ATMOSPHERE VALIDATION
 
@@ -27,7 +27,7 @@ checks = [
 
 all_passed = True
 for h, T_ref, P_ref, rho_ref in checks:
-    T   = get_temperature(h)
+    T   = get_temp(h)
     P   = get_pressure(h)
     rho = get_density(h)
     
@@ -55,7 +55,7 @@ v        = 1820    # m/s (~Mach 6)
 h        = 25000   # 25 km
 Rn       = 0.15    # nose radius (m)
 
-q_heat = get_heat_flux(v, h, Rn)
+q_heat = get_heatflux(v, h, Rn)
 q_dyn  = get_dynamic_pressure(v, h)
 
 print(f"  Heat flux       = {q_heat/1000:.2f} kW/m²")
