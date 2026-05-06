@@ -68,4 +68,4 @@ print("    (This will take 15-20 seconds)\n")
 
 import visualizer
 
-print("\n✅ Done! Plot saved as hypersonic_corridor_comparison.png")
+print("\n Done! Plot saved as hypersonic_corridor_comparison.png")
